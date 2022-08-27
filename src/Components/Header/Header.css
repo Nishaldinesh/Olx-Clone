@@ -93,10 +93,6 @@
   font-weight: bolder;
   margin-right: 5px;
 }
-
-.language svg {
-}
-
 .span {
   text-decoration: none;
   font-size: 16px;
@@ -114,6 +110,15 @@
 
 .loginPage a{
   text-decoration: none;
+}
+.loginPage .login_btn{
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom:solid 3px ;
+}
+.loginPage .login_btn:hover{
+   border: none;
 }
 
 .sellMenu {

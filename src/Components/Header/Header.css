@@ -101,6 +101,9 @@
   font-weight: bolder;
   margin-right: 5px;
 }
+.loginPage{
+  position: relative;
+}
 
 .loginPage hr {
   margin: 0;
@@ -115,10 +118,55 @@
   border: none;
   outline: none;
   background: none;
-  border-bottom:solid 3px ;
+  border-radius: 50px;
+  height: 54px;
+  width: 54px;
 }
 .loginPage .login_btn:hover{
-   border: none;
+  background-color: lightgray;
+}
+.dropdown_menu{
+  display: none;
+}
+.loginPage .login_btn:hover .dropdown_menu{
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.dropdown_menu ul{
+  list-style: none;
+  display: block;
+  font-size: 18px;
+}
+.dropdown_menu ul .username{
+  border-bottom: solid 1px #002f34;
+    font-size: x-large;
+    background-color: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.dropdown_menu ul .username span{
+  color: gray;
+    font-size: 16px;
+   
+}
+.dropdown_menu ul .username:hover{
+  background:none;
+  cursor:default;
+}
+.dropdown_menu ul li{
+  width: 150px;
+  padding: 15px;
+  color: #002f34;
+  display: flex;
+  min-width: 240px;
+  align-items: center;
+}
+.dropdown_menu ul li:hover{
+  background-color: lightgray;
 }
 
 .sellMenu {
@@ -159,6 +207,7 @@
 .sellMenu .sellMenuContent span {
   margin-left: 5px;
 }
+
 
 @media only screen and (max-width: 700px) {
   .placeSearch,
